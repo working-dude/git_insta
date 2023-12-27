@@ -2,4 +2,3 @@ instagrapi
 schedule
 pydantic==1.10.13
 moviepy>=1.0.3
-flask
