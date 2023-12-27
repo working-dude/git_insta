@@ -1,30 +1,30 @@
-file_content = """
-from flask import Flask, render_template
-from threading import Thread
+# file_content = """
+# from flask import Flask, render_template
+# from threading import Thread
 
-app = Flask(__name__)
+# app = Flask(__name__)
 
-@app.route('/')
-def index():
-    return "Alive"
+# @app.route('/')
+# def index():
+#     return "Alive"
 
-def run():
-    app.run(host='0.0.0.0', port=8080)
+# def run():
+#     app.run(host='0.0.0.0', port=8080)
 
-def keep_alive():
-    t = Thread(target=run)
-    t.start()
+# def keep_alive():
+#     t = Thread(target=run)
+#     t.start()
 
-if __name__ == '__main__':
-    keep_alive()
-"""
+# if __name__ == '__main__':
+#     keep_alive()
+# """
 
-file_name = 'keep_alive.py'
+# file_name = 'keep_alive.py'
 
-with open(file_name, 'w') as file:
-    file.write(file_content)
+# with open(file_name, 'w') as file:
+#     file.write(file_content)
 
-print(f"File '{file_name}' has been created with Flask app code.")
+# print(f"File '{file_name}' has been created with Flask app code.")
 
 import json
 
@@ -77,11 +77,11 @@ from instagrapi.types import  StoryMedia
 import time, schedule
 from pathlib import Path
 import os
-from keep_alive import keep_alive
+# from keep_alive import keep_alive
 import random
 from datetime import datetime
 
-keep_alive()
+# keep_alive()
 
 cl = Client()
 
